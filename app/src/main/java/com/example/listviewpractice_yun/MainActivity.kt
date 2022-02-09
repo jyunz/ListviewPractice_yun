@@ -38,5 +38,21 @@ class MainActivity : AppCompatActivity() {
             
         }
 
+        studentListView.setOnItemLongClickListener { parent, view, position, id ->
+
+            mStudentList.removeAt(position)
+
+            //삭제되고나면 내용을 변경한걸 다시 반영
+            mAdapter.notifyDataSetChanged()
+
+//            val longClickedStudent = mStudentList[position]
+//            Toast.makeText(this, "${longClickedStudent.name}길게 클릭됨", Toast.LENGTH_SHORT).show()
+//           롱클릭리스너 전용인가? 맞아(true)
+//            아니야, false(롱클릭과 일반 클릭 효과가 중첩됨)
+            return@setOnItemLongClickListener true
+
+
+
+        }
     }
 }
