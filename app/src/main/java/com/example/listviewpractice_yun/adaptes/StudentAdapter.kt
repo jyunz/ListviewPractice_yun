@@ -8,11 +8,11 @@ import android.widget.ArrayAdapter
 import com.example.listviewpractice_yun.R
 import com.example.listviewpractice_yun.datas.Student
 
-class studentAdapter(
+class StudentAdapter(
     val mContext: Context,
     val resId:Int,
     val mList : ArrayList<Student>) : ArrayAdapter<Student>(mContext, resId, mList) {
-
+//res 파일의 누구(ID)를 불러 올꺼니
     val inf = LayoutInflater.from(mContext)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
