@@ -29,11 +29,18 @@ class StudentAdapter(
         val studentData = mList[position]
     // 꺽쇠<>의 의미는 찾아내고 싶은 종류를 결정하는 것.
         val nameTxt = row.findViewById<TextView>(R.id.nameTxt)
+
+
         val birthYearText = row.findViewById<TextView>(R.id.birthYearTxt)
 
         nameTxt.text = studentData.name
-        birthYearText.text = "(${studentData.birthYear}년생)"
 
+// 출생년도를 가지고 => (2021년 한국기준)나이로 변환해서 보여주기.
+        val koreanAge = 2021 - studentData.birthYear + 1
+
+//        birthYearText.text = "(${studentData.birthYear}년생)"
+// 00년생이 아니라 00살로 표현할때
+        birthYearText.text =  "(${koreanAge}세)"
         return row
         //완성된 결과=row
 
