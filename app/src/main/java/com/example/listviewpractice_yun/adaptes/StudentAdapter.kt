@@ -39,6 +39,8 @@ class StudentAdapter(
         //temprow가 null이면 채워주라고 했기 때문에 여기서는 절대 null이 아니다!!
 
         val studentData = mList[position]
+
+
     // 꺽쇠<>의 의미는 찾아내고 싶은 종류를 결정하는 것.
         val nameTxt = row.findViewById<TextView>(R.id.nameTxt)
 

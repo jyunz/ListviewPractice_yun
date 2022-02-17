@@ -8,6 +8,14 @@ class Student(
     val name : String,
     val birthYear : Int) {
 
+//     2022년 나의 나이를 결과로 내보내 주는 함수
+    fun getMyAgeIn2022() :Int {
+
+        val myAge = 2022 - this.birthYear +1
+
+        return myAge
+    }
+
 //    fun 함수이름(변수이름: 자료형, 변수이름2: 자료형2...) : 결과자료형 {
 //     // 실제로 실행해줄 내용
 //}
@@ -22,15 +30,15 @@ class Student(
 //      이름으로 로그를 찍는 기능
 
 //    function을 수행하기 위해 필요한 재료를 넣어주어야 함.(2가지) : Boolean(true/false로 결과값 나온다 return이 마지막에 있어야 함) {
-    fun printMyNameToLog(num1 : Int, num2 : Double) : Boolean {
+//    fun printMyNameToLog(num1 : Int, num2 : Double) : Boolean {
 //        num1이 num2보다 크다면, 로그를 이름만,
 //         그렇지 않다면, 이름과 인사도 로그에 출력.
-        if (num1 > num2) {
-            Log.d("연습용", this.name)
-
-            Log.d("연습용","잘 부탁드립니다.")
-        }
-
-        return true
-    }
+//        if (num1 > num2) {
+//            Log.d("연습용", this.name)
+//
+//            Log.d("연습용","잘 부탁드립니다.")
+//        }
+//
+//        return true
+//    }
 }
