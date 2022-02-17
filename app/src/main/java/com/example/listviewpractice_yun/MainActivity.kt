@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //목록에 뭔가 추가할꺼다.
-        mStudentList.add( Student("윤지",1993))
-        mStudentList.add( Student("김현상",1972))
-        mStudentList.add( Student("고소영",1986))
-        mStudentList.add( Student("전지현",1975))
-        mStudentList.add( Student("쿠키몬",2010))
-        mStudentList.add( Student("쿠마몬",1998))
+        mStudentList.add( Student("김일영",1993))
+        mStudentList.add( Student("박이영",1972))
+        mStudentList.add( Student("이삼영",1986))
+        mStudentList.add( Student("나사영",1975))
+        mStudentList.add( Student("최오영",2010))
+        mStudentList.add( Student("곽육영",1998))
 
         mAdapter = StudentAdapter(this,R.layout.student_list_item,mStudentList)
 
@@ -55,4 +55,15 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+//    fun 함수이름(변수이름: 자료형, 변수이름2: 자료형2...) : 결과자료형 {
+//     // 실제로 실행해줄 내용
+//}
+//fun sumTwoNumbers(num1: Int, num2: Int) : Int {
+//     return num1+num2 // return으로 함수의 최종 결과값 지정
+//}
+//fun 함수이름() {
+//     // 이 함수는 재료도 필요없고, 결과도 따로 없다. (void)
+//}
+//    첫번째 중괄호 안에서만 생성되어야 함
 }
